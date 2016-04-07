@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  新浪微博
+//
+//  Created by 童乐 on 15/10/24.
+//  Copyright © 2015年 童乐. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Availability.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "Masonry.h"
+#import "UIWindow+Extension.h"
+#import "NSArray+Log.h"
+#import "NSString+Extension.h"
+#import "UIImage+Extesnsion.h"
+#import "MJExtension.h"
+#import "NSString+Emoji.h"
+#import "Common.h"
+#ifdef DEBUG //处于开发阶段
+#define CSLog(...) NSLog(__VA_ARGS__)
+#else //发布阶段
+#define CSLog(...) 
+#endif
+#define CSNotificationCenter   [NSNotificationCenter defaultCenter]
+//RGB颜色
+#define CSRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+//随机色
+#define CSRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0  green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+#endif /* PrefixHeader_pch */

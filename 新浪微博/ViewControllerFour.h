@@ -1,0 +1,15 @@
+//
+//  ViewControllerFour.h
+//  新浪微博
+//
+//  Created by sansi on 16/3/28.
+//  Copyright © 2016年 石冬冬. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ViewControllerFour : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *informationLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+@end
